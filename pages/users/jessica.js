@@ -4,6 +4,7 @@ export default function Jessica() {
   return (
     <div>
       <Head>
+        {/* TODO: add variable to title for name */}
         <title>Jessica</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
