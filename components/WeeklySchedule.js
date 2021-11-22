@@ -30,9 +30,11 @@ export default function WeeklySchedule() {
                 <th className='text-center text-xs md:text-md lg:text-lg font-normal border-r border-black w-1/4'>
                   Actual
                 </th>
+                {/* eslint-disable-next-line */}
                 <th className='text-center text-xs md:text-md lg:text-lg font-normal border-r border-black w-1/12'>
                   Pace Minutes
                 </th>
+                {/* eslint-disable-next-line */}
                 <th className='text-center text-xs md:text-md lg:text-lg font-normal w-1/12'>
                   Pace Seconds
                 </th>
