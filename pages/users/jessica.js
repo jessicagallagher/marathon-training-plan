@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import WeeklySchedule from '../../components/WeeklySchedule';
+import { PrismaClient } from '.prisma/client';
 
 export default function Jessica() {
   return (

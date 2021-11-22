@@ -1,4 +1,5 @@
 export default function WeeklySchedule() {
+
   return (
     <div className='h-screen container max-w-full mx-auto p-4'>
       <div className='flex flex-col justify-center'>
@@ -36,12 +37,12 @@ export default function WeeklySchedule() {
                   Pace Seconds
                 </th>
               </tr>
-              
+
 
             </thead>
 
           </table>
-          
+
         </div>
       </div>
 
