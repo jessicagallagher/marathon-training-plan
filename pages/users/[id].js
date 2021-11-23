@@ -33,7 +33,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function({ user }) {
+export default function MyComponent({ user }) {
 
   <div>
     <Head>
