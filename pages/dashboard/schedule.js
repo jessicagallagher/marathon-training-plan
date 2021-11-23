@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Schedule from "../components/schedule";
+import Schedule from "../components/Schedule";
 
 export default function weeklySchedule() {
   return (
