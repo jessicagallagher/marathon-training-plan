@@ -10,9 +10,6 @@ module.exports = {
       fontFamily: {
         'accent': ['Dosis', 'sans-serif'],
         'main': ['Raleway', 'sans-serif']
-      },
-      colors: {
-        'teal': '#46BDC6',
       }
     },
   },
