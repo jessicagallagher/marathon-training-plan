@@ -25,15 +25,15 @@ model Users {
   email                String
   password             String         @default("password")
   TrainingPlan         TrainingPlan[]
-  actualMilesRun       Decimal
+  actualMilesRun       String
   paceMinutes          Int
   paceSeconds          Int
-  weekTotalMiles       Decimal
-  averageWeeklyPace    Decimal
-  paceGapToGoal        Decimal
-  totalMilesOverall    Decimal
-  totalAveragePace     Decimal
-  averagePaceGapToGoal Decimal
+  weekTotalMiles       String
+  averageWeeklyPace    String
+  paceGapToGoal        String
+  totalMilesOverall    String
+  totalAveragePace     String
+  averagePaceGapToGoal String
 }
 
 model TrainingPlan {
@@ -47,5 +47,5 @@ model TrainingPlan {
   isWorkout            Boolean      @default(false)
   isRest               Boolean      @default(true)
   workoutType          String
-  targetMiles          Decimal
+  targetMiles          String
 }

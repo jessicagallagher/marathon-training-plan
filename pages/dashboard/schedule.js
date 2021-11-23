@@ -1,9 +1,31 @@
-export default function WeeklySchedule() {
+import { PrismaClient } from '@prisma/client';
 
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const users = await prisma.users.findMany({
+    where: {
+      id: 1,
+    }
+  });
+
+  return {
+    props: {
+      users
+    }
+  };
+}
+
+export default function Schedule({ users }) {
   return (
+
     <div className='h-screen container max-w-full mx-auto p-4'>
       <div className='flex flex-col justify-center'>
         <div className='shadow-2xl overflow-hidden rounded-lg border border-black'>
+          <ul>
+            {users.map((user) => (
+              <li key={user.id}>{user.name}</li>
+            ))}
+          </ul>
           <table className='min-w-full'>
             <thead className='bg-teal divide-y divide-black'>
               <tr>
@@ -50,6 +72,9 @@ export default function WeeklySchedule() {
 
 
     </div>
+
+
+
 
   )
 }
