@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Schedule from '../dashboard/schedule';
+import Schedule from '../../components/Schedule.js';
 import { PrismaClient } from '@prisma/client';
 
 export async function getStaticProps({ params }) {
@@ -21,7 +21,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const prisma = new PrismaClient();
-  const user = await prisma.users.findMany();
+  const user = await prisma.user.findMany();
 
   return {
     paths: user.map((user) => ({
